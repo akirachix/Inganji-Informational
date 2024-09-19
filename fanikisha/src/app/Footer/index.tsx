@@ -6,25 +6,25 @@ import { MdMail, MdPhone, MdLocationOn } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer className="w-full font-sans">
+    <footer className="w-full work-sans">
       <div className="bg-[#2A88BD] text-white py-6 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between">
           <div className="mb-6 sm:mb-0 mr-9">
-            <Image src="/myimg/fanikisha.png" alt="Fanikisha" width={120} height={48} className="object-contain" />
+       <Image src="/myimg/fanikisha.png" alt="Fanikisha" width={120} height={48} className="object-contain" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
             <div>
               <h3 className="font-bold text-lg mb-3 flex items-center">Contact Us</h3>
-              <p className="flex items-center mb-2">
+             <p className="flex items-center mb-2">
               <MdMail 
   size={20} 
   data-classname="mr-2 min-w-[20px]" 
   aria-hidden="true" 
 />
-                inganj@akirachix.com
+  inganj@akirachix.com
               </p>
               <p className="flex items-center mb-2">
-              <MdMail 
+              <MdPhone 
   size={20} 
   data-classname="mr-2 min-w-[20px]" 
   aria-hidden="true" 
@@ -41,8 +41,8 @@ const Footer = () => {
             <div>
               <h3 className="font-bold text-lg mb-3">Location</h3>
               <p className="flex items-center mb-2">
-              <MdMail 
-  size={20} 
+              <MdLocationOn
+  size={26} 
   data-classname="mr-2 min-w-[20px]" 
   aria-hidden="true" 
 />                616 Korongo Road, Nairobi-Kenya
