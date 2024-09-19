@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Footer from './Footer';
 
@@ -10,3 +11,12 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+import Product from "./Product"
+
+export default function Home(){
+  return(
+    <main>
+    <Product/>
+    </main>
+  )
+}
