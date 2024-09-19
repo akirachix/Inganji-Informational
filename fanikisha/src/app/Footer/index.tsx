@@ -1,7 +1,7 @@
-"use client"; 
-
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { MdMail, MdPhone, MdLocationOn } from 'react-icons/md';
 
 const Footer = () => {
@@ -10,42 +10,42 @@ const Footer = () => {
       <div className="bg-[#2A88BD] text-white py-6 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between">
           <div className="mb-6 sm:mb-0 mr-9">
-       <Image src="/myimg/fanikisha.png" alt="Fanikisha" width={120} height={48} className="object-contain" />
+            <Image src="/myimg/fanikisha.png" alt="Fanikisha" width={120} height={48} className="object-contain" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div>
-              <h3 className="font-bold text-lg mb-3 flex items-center">Contact Us</h3>
-             <p className="flex items-center mb-2">
-              <MdMail 
-  size={20} 
-  data-classname="mr-2 min-w-[20px]" 
-  aria-hidden="true" 
-/>
-  inganj@akirachix.com
+              <h3 className="font-bold text-lg md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[25px] mb-3 flex items-center">
+                <Link href="/contact" className="hover:underline">Contact Us</Link>
+              </h3>
+              <p className="flex items-center mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+                <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdMail size={20} /></span>
+                inganj@akirachix.com 
               </p>
-              <p className="flex items-center mb-2">
-              <MdPhone 
-  size={20} 
-  data-classname="mr-2 min-w-[20px]" 
-  aria-hidden="true" 
-/>                +254 767 838 597
-              </p>
+              <p className="flex items-center mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+                <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdPhone size={20} /></span> 
+                +254 767 838 597
+              </p> 
             </div>
-            <div className='sm:ml-9' >
-    
-            <p className="mb-2">Home</p>
-              <p className="mb-2">About Us</p>
-              <p className="mb-2">Solution</p>
-              <p>Team</p>
+            <div className='sm:ml-9'>
+            
+              <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+                <Link href="/" className="hover:underline">Home</Link>
+         </p>
+        <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+            <Link href="/about" className="hover:underline">About Us</Link>
+            </p>
+         <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+         <Link href="/solution" className="hover:underline">Solution</Link>
+      </p>
+       <p className="text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+                 <Link href="/team" className="hover:underline">Team</Link>
+    </p>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-3">Location</h3>
-              <p className="flex items-center mb-2">
-              <MdLocationOn
-  size={26} 
-  data-classname="mr-2 min-w-[20px]" 
-  aria-hidden="true" 
-/>                616 Korongo Road, Nairobi-Kenya
+              <h3 className="font-bold text-lg md:text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[25px] mb-3">Location</h3>
+              <p className="flex items-center mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
+                <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdLocationOn size={26} /></span>
+                616 Korongo Road, Nairobi-Kenya
               </p>
             </div>
           </div>
@@ -54,61 +54,6 @@ const Footer = () => {
       <div className="bg-gray-200 py-3 px-4 text-center text-xs text-gray-600">
         <p>&copy; Inganji@AkiraChix 2024</p>
       </div>
-
-      <style jsx>{`
-        @media (min-width: 768px) and (max-width: 1024px) {
-          h3 {
-            font-size: 20px; 
-          }
-          p {
-            font-size:15px; 
-          }
-         
-
-
-        }
-        @media (min-width: 820px) and (max-width: 1180px) {
-          h3 {
-            font-size: 20px; 
-          }
-          p {
-            font-size: 15px; 
-          }
-        }
-        @media (min-width: 1024px) and (max-width: 1366px) {
-          h3 {
-            font-size: 20px; 
-          }
-          p {
-            font-size: 15px; 
-          }
-        }
-        @media (min-width: 912px) and (max-width: 1368px) {
-          h3 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px; 
-          }
-        }
-        @media (min-width: 1024px) and (max-width: 600px) {
-          h3 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px; 
-          }
-        }
-        @media (min-width: 1280px) and (max-width: 800px) {
-          h3 {
-            font-size: 25px; 
-          }
-          p {
-            font-size: 18px; 
-          }
-        }
-
-      `}</style>
     </footer>
   );
 };
