@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 @font-face {
     font-family: 'Work Sans';
     src: url('/fonts/WorkSans-Regular.ttf') format('truetype');
