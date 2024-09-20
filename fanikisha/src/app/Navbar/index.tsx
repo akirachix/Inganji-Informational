@@ -10,29 +10,27 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md h-32 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-         <div className="flex items-center justify-end"> 
-  <div className="flex-0 xl:ml-[-300px]"> 
-    <Image 
-      src="/images/fanikisha_logo.png" 
-      alt="Fanikisha" 
-      width={150} 
-      height={80} 
-      className="object-contain mt-20" 
-    />
-  </div>
+        <div className="flex justify-between h-16 items-center">
+          <div className="flex-0 mt-20"> 
+            <Image 
+              src="/images/fanikisha_logo.png" 
+              alt="Fanikisha" 
+              width={150} 
+              height={80} 
+              className="object-contain" 
+            />
+          </div>
+          <div className="hidden md:flex items-center -ml-20 mt-10 space-x-8 text-lg md:text-xl lg:text-3xl">
+  <Link href="#homepage" className="py-4 text-black hover:text-blue-500">Home</Link>
+  <Link href="#aboutus" className="py-4 text-black hover:text-blue-500">About Us</Link>
+  <Link href="#product" className="py-4 text-black hover:text-blue-500">Product</Link>
+  <Link href="#team" className="py-4 text-black hover:text-blue-500">Team</Link>
+  <Link href="#contact" className="py-4 text-black hover:text-blue-500">Contact Us</Link>
 </div>
 
-          <div className="hidden md:flex items-center space-x-1 mt-16 relative left-0 sm:relative text-lg md:text-xl lg:text-1 xl:text-3xl gap-12 lg:gap-16 xl:gap-20 mr-0 lg:mr-0">
-            <Link href="#homepage" className="py-4 px-2 text-black hover:text-blue-500">Home</Link>
-            <Link href="#aboutus" className="py-4 px-2 text-black hover:text-blue-500">About Us</Link>
-            <Link href="#product" className="py-4 px-2 text-black hover:text-blue-500">Product</Link>
-            <Link href="#team" className="py-4 px-2 text-black hover:text-blue-500">Team</Link>
-            <Link href="#contact" className="py-4 px-2 text-black hover:text-blue-500">Contact Us</Link>
-          </div>
           <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="outline-none mobile-menu-button">
-              <HiMenu className="w-12 h-12 text-gray-500 hover:text-blue-500" />
+            <button onClick={() => setIsOpen(!isOpen)} className="outline-none">
+              <HiMenu className="w-8 h-8 text-gray-500 hover:text-blue-500" />
             </button>
           </div>
         </div>
@@ -49,7 +47,7 @@ const Navbar = () => {
           <Link href="#aboutus" className="py-4 text-xl text-gray-700 hover:text-gray-900" onClick={() => setIsOpen(false)}>About Us</Link>
           <Link href="#product" className="py-4 text-xl text-gray-700 hover:text-gray-900" onClick={() => setIsOpen(false)}>Product</Link>
           <Link href="#team" className="py-4 text-xl text-gray-700 hover:text-gray-900" onClick={() => setIsOpen(false)}>Team</Link>
-          <Link href="#footer" className="py-4 text-xl text-gray-700 hover:text-gray-900" onClick={() => setIsOpen(false)}>Contact Us</Link>
+          <Link href="#contact" className="py-4 text-xl text-gray-700 hover:text-gray-900" onClick={() => setIsOpen(false)}>Contact Us</Link>
         </div>
       </div>
     </nav>
