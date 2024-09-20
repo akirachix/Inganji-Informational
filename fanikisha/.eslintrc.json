@@ -1,0 +1,12 @@
+
+
+
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/jsx-no-undef": "off",
+    "react/jsx-props-no-spreading": "off"
+  }
+}
