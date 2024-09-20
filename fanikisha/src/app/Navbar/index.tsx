@@ -6,7 +6,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <nav className="bg-white shadow-md h-32 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,12 +21,12 @@ const Navbar = () => {
             />
           </div>
           <div className="hidden md:flex items-center -ml-20 mt-10 space-x-8 text-lg md:text-xl lg:text-3xl">
-  <Link href="#homepage" className="py-4 text-black hover:text-blue-500">Home</Link>
-  <Link href="#aboutus" className="py-4 text-black hover:text-blue-500">About Us</Link>
-  <Link href="#product" className="py-4 text-black hover:text-blue-500">Product</Link>
-  <Link href="#team" className="py-4 text-black hover:text-blue-500">Team</Link>
-  <Link href="#contact" className="py-4 text-black hover:text-blue-500">Contact Us</Link>
-</div>
+            <Link href="#homepage" className="py-4 text-black hover:text-blue-500">Home</Link>
+            <Link href="#aboutus" className="py-4 text-black hover:text-blue-500">About Us</Link>
+            <Link href="#product" className="py-4 text-black hover:text-blue-500">Product</Link>
+            <Link href="#team" className="py-4 text-black hover:text-blue-500">Team</Link>
+            <Link href="#contact" className="py-4 text-black hover:text-blue-500">Contact Us</Link>
+          </div>
 
           <div className="md:hidden flex items-center">
             <button onClick={() => setIsOpen(!isOpen)} className="outline-none">
