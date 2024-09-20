@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <div className="flex-grow overflow-y-auto mt-4 ">
               {Array.isArray(item.content) ? (
-                <ul className={`list-disc pl-5 text-[22px] mb-11 space-y-2 h-5 sm:text-lg md:text-xl min-h-[201px] lg:text-[24px] lg:min-h-[250px]  font-light ${item.contentTextColor}`}>
+                <ul className={`list-disc pl-5 text-[22px] mb-11 space-y-2 h-5 sm:text-lg md:text-xl min-h-[150px] lg:text-[24px] lg:min-h-[250px]  font-light ${item.contentTextColor}`}>
                   {item.content.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
