@@ -3,11 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MdMail, MdPhone, MdLocationOn } from 'react-icons/md';
-
 const Footer = () => {
   return (
-    <footer className="w-full work-sans">
-      <div className="bg-[#2A88BD] text-white py-6 px-4 sm:px-6">
+    <footer id="contact" className="w-full work-sans">
+      <div className="bg-[#2A88BD] text-white py-16 px-4 sm:px-6">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between">
           <div className="mb-6 sm:mb-0 mr-9">
             <Image src="/myimg/fanikisha.png" alt="Fanikisha" width={120} height={48} className="object-contain" />
@@ -19,26 +18,25 @@ const Footer = () => {
               </h3>
               <p className="flex items-center mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
                 <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdMail size={20} /></span>
-                inganj@akirachix.com 
+                inganj@akirachix.com
               </p>
               <p className="flex items-center mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
-                <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdPhone size={20} /></span> 
+                <span className="mr-2 min-w-[20px]" aria-hidden="true"><MdPhone size={20} /></span>
                 +254 767 838 597
-              </p> 
+              </p>
             </div>
             <div className='sm:ml-9'>
-            
               <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
-                <Link href="/" className="hover:underline">Home</Link>
+                <Link href="#Homepage" className="hover:underline">Home</Link>
          </p>
         <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
-            <Link href="/about" className="hover:underline">About Us</Link>
+            <Link href="#About" className="hover:underline">About Us</Link>
             </p>
          <p className="mb-2 text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
-         <Link href="/solution" className="hover:underline">Solution</Link>
+         <Link href="#product" className="hover:underline">Product</Link>
       </p>
        <p className="text-sm md:text-[15px] lg:text-[15px] xl:text-[15px] 2xl:text-[18px]">
-                 <Link href="/team" className="hover:underline">Team</Link>
+                 <Link href="#team" className="hover:underline">Team</Link>
     </p>
             </div>
             <div>
@@ -57,5 +55,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

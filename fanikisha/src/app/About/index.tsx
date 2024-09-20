@@ -1,8 +1,7 @@
 import React from 'react';
-
 const About = () => {
   return (
-    <main className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-['Work_Sans']">
+    <main id="aboutus" className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-['Work_Sans']">
      <h1 className="text-customBlue text-4xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-center font-work-sans font-bold mt-10">
           About Us
         </h1>
@@ -37,7 +36,7 @@ const About = () => {
         ].map((item) => (
           <div
             key={item.title}
-            className={`w-[90%] sm:w-[80%] md:w-[70%] lg:w-[397px] min-h-[4px] shadow-lg rounded-[59px] ${item.bgColor} p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out transform hover:-translate-y-3 hover:scale-105 hover:shadow-2xl`}>
+            className={`w-[90%] sm:w-[80%] md:w-[70%] lg:w-[397px] min-h-[4px] shadow-lg rounded-[59px] ${item.bgColor} p-6 sm:p-8 flex flex-col transition-all duration-300 ease-in-out transform hover:-translate-y-3 hover:scale-105 hover:shadow-2xl `}>
             <div className="flex items-center space-x-4 mb-6 ">
               <img
                 src={`/media/${item.title.toLowerCase()}.png`}
@@ -50,13 +49,13 @@ const About = () => {
             </div>
             <div className="flex-grow overflow-y-auto mt-4 ">
               {Array.isArray(item.content) ? (
-                <ul className={`list-disc pl-5 text-[22px] mb-11 space-y-2 h-5 sm:text-lg md:text-xl min-h-[150px] lg:text-[24px] lg:min-h-[250px]  font-light ${item.contentTextColor}`}>
+                <ul className={`list-disc pl-5 text-[22px] mb-11 space-y-2  sm:text-lg md:text-xl min-h-[150px] lg:text-[24px] lg:min-h-[100px]  font-light ${item.contentTextColor}`}>
                   {item.content.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}
                 </ul>
               ) : (
-                <p className={`sm:text-[20px] md:text-[200px]  lg:text-[24px] text-[22px]  font-light ${item.contentTextColor}`}>
+                <p className={`sm:text-[20px] md:text-[22px]  lg:text-[24px] text-[22px]  font-light ${item.contentTextColor}`}>
                   {item.content}
                 </p>
               )}
@@ -67,5 +66,11 @@ const About = () => {
     </main>
   );
 }
-
 export default About;
+
+
+
+
+
+
+
